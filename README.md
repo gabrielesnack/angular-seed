@@ -1,6 +1,6 @@
-# Estrutura de pastas e arquivos para o angular.
+## :chess_pawn: Estrutura para o angular :chess_pawn:
 
-- Proposta inicial de criar uma seed para centralizar e desacoplar cada responsabilidade, permitindo o gerenciamento de paginas, componentes e regras de negócio para projetos de larga escala e voltado a squads com a finalidade de reduzir efeitos colaterais, aumentar a reutilização e garantir entregas mais integras. 
+<p align="center">:black_circle: Proposta inicial de criar uma seed para centralizar e desacoplar cada responsabilidade, permitindo o gerenciamento de paginas, componentes e regras de negócio para projetos de larga escala e voltado a squads com a finalidade de reduzir efeitos colaterais, aumentar a reutilização e garantir entregas mais integras. :black_circle:</p>
 
 - /app
   - /componentes
