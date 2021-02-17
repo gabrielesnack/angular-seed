@@ -1,27 +1,43 @@
-# AngularSeed
+# Estrutura de pastas e arquivos para o angular.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.2.
+- Proposta inicial de criar uma seed para centralizar e desacoplar cada responsabilidade, permitindo o gerenciamento de paginas, componentes e regras de negócio para projetos de larga escala e voltado a squads com a finalidade de reduzir efeitos colaterais, aumentar a reutilização e garantir entregas mais integras. 
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+> /app
+  > /componentes
+    - componentes reutilizaveis para toda aplicação.
+  > /directives
+    - diretivas da aplicação.
+  > /guards
+    - middleware de paginas. 
+  > /layouts
+    - estrutura comum entre páginas, ex: header e menu lateral, vao ser comuns entre todas a paginas. 
+  > /mocks
+    - dados fixos ex: lista de usuarios padrão para alguma finalidade temporaria.
+  > /modules
+    > /nome_do_modulo
+      > /components
+        - componentes reutilizaveis dentro de um contexto especifico, ou nesse caso do modulo em especifico.
+      > /helpers
+        - codígos reutilizaveis dentro de um contexto especifico, ou nesse caso do modulo em especifico, ex: validações, metódos, etc.
+      > /pages
+        > /criar
+          > /helpers
+            - codígos exclusivos com a finalidade de serem reaproveitados dentro das partições ou dos componentes inteligentes de uma página, e também para reduzir o tamanho e a responsabilidade do arquivo principal da pagina.
+          > /partials
+            - crie componentes inteligentes com a finalidade de segregar e diminuir as responsabilidades do arquivo principal da página.
+          types.ts //armazena tipagem de parametro ou dados da pagina em especifico.
+          main-file.ts
+          main-file.html
+      types.ts //armazena tipagem de parametro ou dados do modulo.
+      nome_do_module.module.ts
+      nome_do_module.route.ts
+    > /outro-modulo
+  > /pipes
+    - crie seus pipes para RxJS
+  > /services
+    > /nome_do_servico 
+      - arquivos com as funcionalidades de acordo com o serviço
+    > /user
+      - crud.ts
+      - permissões.ts // gerencia a comunicação com a api de permissões da tela que um usuario pode acessar  
+      - galeria-fotos.ts // gerencia a comunicação com a api de galeria de fotos do usuario.

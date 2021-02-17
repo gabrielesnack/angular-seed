@@ -1,0 +1,1 @@
+#Pipes para o rxJS

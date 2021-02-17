@@ -1,0 +1,2 @@
+#Partições da pagina ou componentes inteligentes, esses tem como objetivo reduzir e segregar as funcionalidades e responsabilidades da tela.
+#Smart components or parts from page. These componentes are going to be little parts about your page with a purposes of reduced responsibility from the main file.

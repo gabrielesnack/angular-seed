@@ -1,0 +1,2 @@
+#Componente genéricos.
+#Generic Components
