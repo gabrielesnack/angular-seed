@@ -1,6 +1,8 @@
-## :chess_pawn: Estrutura para o angular :chess_pawn:
+<h1 align="center">
+    <p>:chess_pawn: Estrutura para o angular :chess_pawn:</p>
+</h1>
 
-<p align="center">:black_circle: Proposta inicial de criar uma seed para centralizar e desacoplar cada responsabilidade, permitindo o gerenciamento de paginas, componentes e regras de negócio para projetos de larga escala e voltado a squads com a finalidade de reduzir efeitos colaterais, aumentar a reutilização e garantir entregas mais integras. :black_circle:</p>
+<p align="justify">Proposta inicial de criar uma seed para centralizar e desacoplar cada responsabilidade, permitindo o gerenciamento de paginas, componentes e regras de negócio para projetos de larga escala e voltado a squads com a finalidade de reduzir efeitos colaterais, aumentar a reutilização e garantir entregas mais integras. 🚀</p>
 
 - /app
   - /componentes
